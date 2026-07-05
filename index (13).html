@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WeForge Technologies — Building Intelligent Digital Solutions</title>
+<meta name="description" content="WeForge Technologies designs and forges AI-powered software, web platforms, and mobile products for ambitious companies.">
+
+<!-- Fonts: Space Grotesk (display) + Inter (body) + JetBrains Mono (data/labels) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ Blueprint backdrop (fixed, decorative) ============ -->
+<div class="blueprint-grid" aria-hidden="true"></div>
+
+<!-- ============ Navigation ============ -->
+<header class="navbar" id="navbar">
+  <nav class="nav-container">
+    <a href="#home" class="logo" aria-label="WeForge Technologies home">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="30" height="30">
+          <polygon points="20,3 35,11 35,29 20,37 5,29 5,11" fill="none" stroke="url(#logoGrad)" stroke-width="2"/>
+          <path d="M13 20 L18 26 L27 14" fill="none" stroke="url(#logoGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <defs>
+            <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#FF8A3D"/>
+              <stop offset="100%" stop-color="#FFC857"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </span>
+      <span class="logo-text">WeForge</span>
+    </a>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#services" class="nav-link">Services</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#ai-feature" class="nav-link">Intelligence</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <li><a href="#contact" class="nav-cta">Start a project</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="home">
+
+  <!-- ============ Hero ============ -->
+  <section class="hero" aria-label="Introduction">
+    <div class="hero-inner">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="eyebrow-dot"></span>WEFORGE TECHNOLOGIES — EST. 2016</p>
+        <h1 class="hero-title">
+          Building Intelligent<br>
+          Digital Solutions <span class="gradient-text">for Tomorrow</span>
+        </h1>
+        <p class="hero-desc">
+          We forge AI systems, web platforms, and mobile products for companies who refuse to ship
+          anything ordinary. Strategy, design, and engineering — hammered into one team.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary ripple">Start a project</a>
+          <a href="#services" class="btn btn-secondary ripple">Explore our work</a>
+        </div>
+        <div class="hero-trust">
+          <span class="hero-trust-label">Trusted by product teams at</span>
+          <div class="hero-trust-logos">
+            <span>NORTHPEAK</span><span>ORBITAL</span><span>VELIN&nbsp;LABS</span><span>ATLASWORKS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" aria-hidden="true">
+        <div class="forge-orb">
+          <svg viewBox="0 0 480 480" class="forge-svg">
+            <defs>
+              <radialGradient id="orbGlow" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#FF8A3D" stop-opacity="0.55"/>
+                <stop offset="100%" stop-color="#FF8A3D" stop-opacity="0"/>
+              </radialGradient>
+              <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#FF8A3D"/>
+                <stop offset="100%" stop-color="#3EC6E0"/>
+              </linearGradient>
+            </defs>
+            <circle cx="240" cy="240" r="180" fill="url(#orbGlow)"/>
+            <g class="spin-slow">
+              <circle cx="240" cy="240" r="150" fill="none" stroke="url(#ringGrad)" stroke-width="1.2" stroke-dasharray="4 10" opacity="0.6"/>
+            </g>
+            <g class="spin-reverse">
+              <circle cx="240" cy="240" r="110" fill="none" stroke="#4A5568" stroke-width="1" stroke-dasharray="1 6"/>
+            </g>
+            <!-- Central forged hexagon core -->
+            <g class="pulse-core">
+              <polygon points="240,150 320,195 320,285 240,330 160,285 160,195" fill="#141922" stroke="url(#ringGrad)" stroke-width="2"/>
+              <path d="M205 230 L232 258 L282 205" fill="none" stroke="#FFC857" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <!-- Orbiting nodes representing services -->
+            <g class="orbit-a"><circle cx="240" cy="70" r="6" fill="#FF8A3D"/></g>
+            <g class="orbit-b"><circle cx="410" cy="240" r="5" fill="#3EC6E0"/></g>
+            <g class="orbit-c"><circle cx="240" cy="410" r="5" fill="#FFC857"/></g>
+            <g class="orbit-d"><circle cx="70" cy="240" r="5" fill="#8B92A0"/></g>
+          </svg>
+          <!-- Rising sparks -->
+          <span class="spark s1"></span>
+          <span class="spark s2"></span>
+          <span class="spark s3"></span>
+          <span class="spark s4"></span>
+          <span class="spark s5"></span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-cue" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- ============ Services ============ -->
+  <section class="services" id="services" aria-label="Our services">
+    <div class="section-head reveal">
+      <p class="eyebrow center"><span class="eyebrow-dot"></span>WHAT WE FORGE</p>
+      <h2 class="section-title">One team, every discipline your product needs</h2>
+      <p class="section-desc">From first prototype to production-scale AI infrastructure — we cover the full build.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <article class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="24" cy="24" r="6"/><path d="M24 4v6M24 38v6M4 24h6M38 24h6M9.5 9.5l4.2 4.2M34.3 34.3l4.2 4.2M9.5 38.5l4.2-4.2M34.3 13.7l4.2-4.2"/>
+          </svg>
+        </div>
+        <h3>AI Solutions</h3>
+        <p>Custom machine learning models, LLM integrations, and intelligent automation built around your real data.</p>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="6" y="10" width="36" height="24" rx="2"/><path d="M6 18h36M14 34v6M34 34v6M12 40h24"/>
+          </svg>
+        </div>
+        <h3>Web Development</h3>
+        <p>Fast, accessible, scalable web platforms engineered with modern architectures and clean code.</p>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="15" y="4" width="18" height="40" rx="3"/><path d="M15 36h18"/><circle cx="24" cy="40" r="0.5"/>
+          </svg>
+        </div>
+        <h3>Mobile Apps</h3>
+        <p>Native-feeling iOS and Android experiences designed for retention, speed, and delight.</p>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 34a8 8 0 0 1-2-15.8A10 10 0 0 1 31 12a8.5 8.5 0 0 1 8.5 8.5c0 .5 0 .9-.1 1.3A7 7 0 0 1 36 34H14z"/>
+          </svg>
+        </div>
+        <h3>Cloud Integration</h3>
+        <p>Resilient cloud infrastructure, CI/CD pipelines, and DevOps practices that scale with you.</p>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 40 18 24l8 8 16-20"/><circle cx="18" cy="24" r="2"/><circle cx="26" cy="32" r="2"/><circle cx="42" cy="12" r="2"/>
+          </svg>
+        </div>
+        <h3>UI/UX Design</h3>
+        <p>Interfaces shaped by research and craft — every interaction considered, every pixel intentional.</p>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 48 48" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="6" y="26" width="8" height="16"/><rect x="20" y="14" width="8" height="28"/><rect x="34" y="6" width="8" height="36"/>
+          </svg>
+        </div>
+        <h3>Data Analytics</h3>
+        <p>Turning raw data into dashboards and decisions with pipelines built for clarity at scale.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ About ============ -->
+  <section class="about" id="about" aria-label="About WeForge Technologies">
+    <div class="about-grid">
+      <div class="about-copy reveal">
+        <p class="eyebrow"><span class="eyebrow-dot"></span>ABOUT WEFORGE</p>
+        <h2 class="section-title">Ten years of turning hard problems into shipped products</h2>
+        <p class="about-text">
+          WeForge Technologies is a product engineering studio for teams building the next generation
+          of intelligent software. We pair deep technical craft with genuine product thinking, working
+          as an embedded partner rather than a vendor.
+        </p>
+        <div class="about-pillars">
+          <div class="pillar">
+            <span class="pillar-label">Mission</span>
+            <p>Give ambitious teams the engineering leverage of an in-house AI lab, without the hiring curve.</p>
+          </div>
+          <div class="pillar">
+            <span class="pillar-label">Vision</span>
+            <p>A future where every company can build software as intelligent as the best AI labs — starting with yours.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-stats reveal">
+        <div class="stat-card">
+          <span class="stat-number" data-target="240" data-suffix="+">0</span>
+          <span class="stat-label">Projects Completed</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-target="120" data-suffix="+">0</span>
+          <span class="stat-label">Happy Clients</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-target="65" data-suffix="+">0</span>
+          <span class="stat-label">AI Solutions Delivered</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-target="10" data-suffix="+">0</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ AI Feature Section ============ -->
+  <section class="ai-feature" id="ai-feature" aria-label="AI capabilities">
+    <div class="ai-feature-inner">
+      <div class="ai-feature-copy reveal">
+        <p class="eyebrow"><span class="eyebrow-dot cool"></span>INTELLIGENCE, BUILT IN</p>
+        <h2 class="section-title">Talk to the kind of AI we build for clients</h2>
+        <p class="section-desc">
+          This isn't a static demo — it's a small live assistant. Ask it about our services,
+          our stack, or how to get in touch, and see the pattern-matching engine we ship respond in real time.
+        </p>
+        <ul class="ai-points">
+          <li>Trained response patterns, zero backend required</li>
+          <li>Typing indicator mirrors real inference latency</li>
+          <li>Fully keyboard accessible chat window</li>
+        </ul>
+        <button class="btn btn-primary ripple" id="ai-cta-open">Try the assistant</button>
+      </div>
+      <div class="ai-feature-visual reveal" aria-hidden="true">
+        <div class="ai-preview-card">
+          <div class="ai-preview-dot"></div>
+          <div class="ai-preview-lines">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="ai-preview-pulse"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Contact ============ -->
+  <section class="contact" id="contact" aria-label="Contact us">
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <p class="eyebrow"><span class="eyebrow-dot"></span>GET IN TOUCH</p>
+        <h2 class="section-title">Tell us what you're building</h2>
+        <p class="section-desc">Reach out directly, or send a message and a member of our team will follow up within one business day.</p>
+
+        <ul class="contact-details">
+          <li>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M4 6l8 7 8-7"/></svg>
+            <a href="mailto:hello@weforgetech.com">hello@weforgetech.com</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .6 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.5 2.9.6a2 2 0 0 1 1.7 2.1z"/></svg>
+            <a href="tel:+18005551234">+1 (800) 555-1234</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>425 Foundry Street, San Francisco, CA</span>
+          </li>
+        </ul>
+
+        <div class="social-icons">
+          <a href="#" aria-label="WeForge on X (Twitter)" class="social-link">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23.5 22h-7l-5.5-7.2L4.7 22H1.5l8.2-9.3L1 2h7.2l5 6.6L18.9 2Z"/></svg>
+          </a>
+          <a href="#" aria-label="WeForge on LinkedIn" class="social-link">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4.98 3.5C4.98 4.9 3.9 6 2.5 6S0 4.9 0 3.5 1.1 1 2.5 1s2.48 1.1 2.48 2.5zM.24 8.75h4.5V23H.24V8.75zM8.5 8.75h4.3v1.95h.06c.6-1.1 2.06-2.26 4.25-2.26 4.55 0 5.4 3 5.4 6.86V23h-4.5v-6.7c0-1.6-.03-3.66-2.23-3.66-2.24 0-2.58 1.75-2.58 3.55V23h-4.5V8.75z"/></svg>
+          </a>
+          <a href="#" aria-label="WeForge on GitHub" class="social-link">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12c0 5.1 3.3 9.4 7.9 11 .6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6a11.5 11.5 0 0 0 7.9-11A11.5 11.5 0 0 0 12 .5z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contact-form" novalidate>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Jordan Rivera" autocomplete="name" required>
+          <span class="form-error" id="name-error" role="alert"></span>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="jordan@company.com" autocomplete="email" required>
+          <span class="form-error" id="email-error" role="alert"></span>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+          <span class="form-error" id="message-error" role="alert"></span>
+        </div>
+        <button type="submit" class="btn btn-primary ripple form-submit">Send message</button>
+        <p class="form-success" id="form-success" role="status" aria-live="polite">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg>
+          Message sent — we'll be in touch within one business day.
+        </p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ Footer ============ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="#home" class="logo" aria-label="WeForge Technologies home">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="26" height="26">
+            <polygon points="20,3 35,11 35,29 20,37 5,29 5,11" fill="none" stroke="url(#logoGradFooter)" stroke-width="2"/>
+            <path d="M13 20 L18 26 L27 14" fill="none" stroke="url(#logoGradFooter)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs>
+              <linearGradient id="logoGradFooter" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#FF8A3D"/>
+                <stop offset="100%" stop-color="#FFC857"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </span>
+        <span class="logo-text">WeForge</span>
+      </a>
+      <p class="footer-tagline">Forging intelligent digital products since 2016.</p>
+    </div>
+
+    <nav class="footer-links" aria-label="Footer navigation">
+      <div class="footer-col">
+        <span class="footer-col-title">Company</span>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#ai-feature">Intelligence</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <span class="footer-col-title">Services</span>
+        <a href="#services">AI Solutions</a>
+        <a href="#services">Web Development</a>
+        <a href="#services">Mobile Apps</a>
+        <a href="#services">Cloud Integration</a>
+      </div>
+    </nav>
+
+    <div class="footer-social">
+      <span class="footer-col-title">Follow</span>
+      <div class="social-icons">
+        <a href="#" aria-label="WeForge on X (Twitter)" class="social-link">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23.5 22h-7l-5.5-7.2L4.7 22H1.5l8.2-9.3L1 2h7.2l5 6.6L18.9 2Z"/></svg>
+        </a>
+        <a href="#" aria-label="WeForge on LinkedIn" class="social-link">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M4.98 3.5C4.98 4.9 3.9 6 2.5 6S0 4.9 0 3.5 1.1 1 2.5 1s2.48 1.1 2.48 2.5zM.24 8.75h4.5V23H.24V8.75zM8.5 8.75h4.3v1.95h.06c.6-1.1 2.06-2.26 4.25-2.26 4.55 0 5.4 3 5.4 6.86V23h-4.5v-6.7c0-1.6-.03-3.66-2.23-3.66-2.24 0-2.58 1.75-2.58 3.55V23h-4.5V8.75z"/></svg>
+        </a>
+        <a href="#" aria-label="WeForge on GitHub" class="social-link">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12c0 5.1 3.3 9.4 7.9 11 .6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6a11.5 11.5 0 0 0 7.9-11A11.5 11.5 0 0 0 12 .5z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> WeForge Technologies. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ============ Floating AI Chatbot Widget ============ -->
+<div class="chat-widget" id="chat-widget">
+  <button class="chat-toggle" id="chat-toggle" aria-label="Open chat assistant" aria-expanded="false" aria-controls="chat-window">
+    <svg class="icon-chat" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+    <svg class="icon-close" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    <span class="chat-toggle-pulse"></span>
+  </button>
+
+  <div class="chat-window" id="chat-window" role="dialog" aria-label="WeForge AI assistant" aria-hidden="true">
+    <div class="chat-header">
+      <div class="chat-header-info">
+        <span class="chat-avatar">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg>
+        </span>
+        <div>
+          <p class="chat-title">Forge Assistant</p>
+          <p class="chat-status"><span class="status-dot"></span>Online</p>
+        </div>
+      </div>
+      <button class="chat-close" id="chat-close" aria-label="Close chat">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <div class="chat-messages" id="chat-messages" aria-live="polite">
+      <div class="chat-msg bot">
+        <p>Hi! I'm the Forge Assistant. Ask me about our services, our stack, or how to reach the team.</p>
+      </div>
+    </div>
+
+    <div class="chat-quick-replies" id="chat-quick-replies">
+      <button class="quick-reply">Tell me about your services</button>
+      <button class="quick-reply">How can I contact you?</button>
+      <button class="quick-reply">Do you build AI products?</button>
+      <button class="quick-reply">What technologies do you use?</button>
+    </div>
+
+    <form class="chat-input-row" id="chat-form">
+      <label for="chat-input" class="sr-only">Type a message</label>
+      <input type="text" id="chat-input" placeholder="Type a message..." autocomplete="off">
+      <button type="submit" class="chat-send" aria-label="Send message">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7Z"/></svg>
+      </button>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
