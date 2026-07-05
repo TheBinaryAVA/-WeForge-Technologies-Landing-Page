@@ -8,7 +8,7 @@ A modern, responsive landing page developed as part of a Frontend Developer prac
 
 ## GitHub Repository
 
-🔗 https://github.com/yourusername/weforge-technologies-landing-page
+🔗 https://github.com/TheBinaryAVA/-WeForge-Technologies-Landing-Page
 
 ---
 
