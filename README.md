@@ -4,7 +4,7 @@ A modern, responsive landing page developed as part of a Frontend Developer prac
 
 ## Live Demo
 
-🔗 https://your-vercel-url.vercel.app
+🔗 https://clever-daifuku-982004.netlify.app/
 
 ## GitHub Repository
 
